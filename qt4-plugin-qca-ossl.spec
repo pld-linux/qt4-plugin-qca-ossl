@@ -5,7 +5,7 @@ Summary:	Qt Cryptographic Architecture (QCA) SSL/TLS plugin
 Summary(pl.UTF-8):	Wtyczka SSL/TLS dla Qt Cryptographic Architecture (QCA)
 Name:		qt4-plugin-%{rname}
 Version:	0.1
-Release:	0.%{snap}.2
+Release:	0.%{snap}.3
 Epoch:		1
 License:	LGPL v2.1
 Group:		Libraries
@@ -16,6 +16,7 @@ BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	qca-devel >= 2.0.0
 BuildRequires:	qt4-qmake >= 4.3.3-3
+%requires_eq	QtCore
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_plugindir %{_libdir}/qt4/plugins/crypto
