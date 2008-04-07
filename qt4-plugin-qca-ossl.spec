@@ -16,7 +16,6 @@ BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	qca-devel >= 2.0.0
 BuildRequires:	qt4-qmake >= 4.3.3-3
-%requires_eq	QtCore
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_plugindir %{_libdir}/qt4/plugins/crypto
